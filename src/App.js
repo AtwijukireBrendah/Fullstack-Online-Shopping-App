@@ -24,7 +24,6 @@ function App() {
         
         if (products.length === 0){
             fetch("http://localhost:3009/api/v1/products")
-
             .then((res) => res.json())
             .then((apiResults) => {
                 setProducts(apiResults)
