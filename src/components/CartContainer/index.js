@@ -20,10 +20,10 @@ function CartContainer({cart, removeFromCart}) {
                 return (
                 <Grid container spacing={2}>
                     <Grid xs={4}>
-                    <img src={item.image} alt="title" width={"150px"} />
+                    <img src={item.image} alt="name" width={"150px"} />
                     </Grid>
                     <Grid xs={4}>
-                    <p>$ {item.price}</p>
+                    <p>UGX {item.price}</p>
                     </Grid>
                     <Grid  xs={4}>
                     <button className="btn" onClick={() => removeFromCart(index)}>Remove from Cart</button>
@@ -34,7 +34,7 @@ function CartContainer({cart, removeFromCart}) {
                 })}   
                 </Box>
 
-                <p>Total price: $ {totalAmount} </p>
+                <p>Total price: UGX {totalAmount} </p>
         </div>
     </>)
 }

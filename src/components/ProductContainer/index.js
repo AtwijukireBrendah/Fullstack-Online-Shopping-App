@@ -9,10 +9,11 @@ function ProductContainer(props) {
         <div>
             <li style={{ maxHeight: '100vh', listStyle: 'none' }}>
                 <div className="product-details">
-                    <img src={props.product.image} alt="title" width={"150px"} />
-                    <p>$ {props.product.price}</p>
+                    <img src={props.product.image} alt="name" width={"150px"} />
+                    <p>UGX {props.product.price}</p>
                     <div>
-                        <h3>{props.product.title}</h3>
+                        {/* <h3>{props.product.title}</h3> */}
+                        <h3>{props.product.name}</h3>
                         <p>{props.product.description}</p>
                     </div>
                     <button className="btn" variant="contained" size="medium" background-color="orange" onClick={() => {

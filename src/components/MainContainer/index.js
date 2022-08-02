@@ -67,10 +67,10 @@ const MainContainer = forwardRef((props, ref) => {
                         productsToDisplay.map((product, index) => (
                             <li className="model-tile" style={{ maxHeight: '100vh' }} key={index}>
                                 <div className="product">
-                                    <img src={product.image} alt="title" width={"150px"}  onClick={() => { props.goToProduct(index) }} />
-                                    <p>$ {product.price}</p>
+                                    <img src={product.image} alt="name" width={"150px"}  onClick={() => { props.goToProduct(index) }} />
+                                    <p>UGX {product.price}</p>
                                     <div>
-                                        <h3>{product.title}</h3>
+                                        <h3>{product.name}</h3>
 
                                         <button className="btn" onClick={() => props.addToCart(product)}>Add to Cart</button>
                                     </div>

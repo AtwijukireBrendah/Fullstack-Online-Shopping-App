@@ -23,12 +23,14 @@ function App() {
     useEffect(() =>{
         
         if (products.length === 0){
-            fetch("https://fakestoreapi.com/products")
+            fetch("http://localhost:3009/api/v1/products")
+
             .then((res) => res.json())
             .then((apiResults) => {
                 setProducts(apiResults)
             });
         }
+
 
         mainContainerRef.current.updateProductsList()
     }, [products])
