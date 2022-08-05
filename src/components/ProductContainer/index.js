@@ -12,9 +12,9 @@ function ProductContainer(props) {
                     <img src={props.product.image} alt="name" width={"150px"} />
                     <p>UGX {props.product.price}</p>
                     <div>
-                        {/* <h3>{props.product.title}</h3> */}
                         <h3>{props.product.name}</h3>
                         <p>{props.product.description}</p>
+                        
                     </div>
                     <button className="btn" variant="contained" size="medium" background-color="orange" onClick={() => {
                         props.addToCart(props.product)

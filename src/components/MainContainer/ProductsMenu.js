@@ -9,7 +9,6 @@ function ProductsMenu(props) {
                         <h1><li class="phone-brand" key={index} onClick={() => { props.selectProductCategory(index) }}><span>{category}</span></li></h1>)
                 }
             </ul>
-       
     </span >
     )
 }
