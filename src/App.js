@@ -19,7 +19,6 @@ function App() {
     const [products, setProducts] = useState([])
     const [cart, setCart] = useState([])
     const [selectedProduct, setSelectedProduct] = useState({})
-
     useEffect(() =>{
         if (products.length === 0){
             fetch("http://localhost:3009/api/v1/products")
